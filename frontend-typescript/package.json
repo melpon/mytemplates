@@ -1,0 +1,46 @@
+{
+  "name": "myapp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server -d",
+    "lint": "eslint --ext .ts,.tsx src/",
+    "dist": "rm -rf dist && NODE_ENV=production webpack --mode=production",
+    "stats": "rm -rf dist && BUILD_STATS=1 NODE_ENV=production webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "melpon",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.3.3",
+    "css-loader": "^3.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "style-loader": "^0.23.1",
+    "unstated-next": "^1.1.0",
+    "use-react-router": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^4.3.5",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "3.5.3",
+    "webpack": "^4.39.3",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
